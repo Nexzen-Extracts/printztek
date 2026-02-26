@@ -1,11 +1,4 @@
-{
-  "rewrites": [
-    { "source": "/printer-setup/epson", "destination": "/printer-setup/epson/index.html" },
-    { "source": "/printer-setup/hp", "destination": "/printer-setup/hp/index.html" },
-    { "source": "/printer-setup/canon", "destination": "/printer-setup/canon/index.html" },
-    { "source": "/printer-setup/brother", "destination": "/printer-setup/brother/index.html" }
-  ]
-}
+
 {
   "cleanUrls": true,
   "trailingSlash": true

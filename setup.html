@@ -148,14 +148,14 @@
 </section>
 
 <script>
-function redirectBrand(brand){
-  var urls = {
-    hp: "/printer-setup/hp/index.html",
-    canon: "/printer-setup/canon/index.html",
-    epson: "/printer-setup/epson/index.html",
-    brother: "/printer-setup/brother/index.html"
-  };
-  window.location.href = urls[brand];
+function redirectBrand(brand) {
+  // Current page se root detect karega
+  const currentPath = window.location.pathname;
+  const basePath = currentPath.includes("/printer-setup/")
+      ? "/printer-setup/"
+      : "/printer-setup/";
+
+  window.location.href = basePath + brand + "/index.html";
 }
 </script>
 <!-- ===== Content Left - Image Right Section ===== -->
