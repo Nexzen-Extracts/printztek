@@ -84,10 +84,49 @@ $(document).on("click", ".for-custom", function () {
 
           <span class="text-white font-20">Enter your Brother product name and model number to get the right Brother Smart software and drivers for you</span>
           <br><br>
-          <form method="post" action="./download-software.html" class="d-flex">
-          		<input type="text" name="search" placeholder="Enter your product name here. Example: “DCP-L2680DW, HL-L2321D" required>
-          		<input type="submit" name="Next" value="Next">
-          </form>
+          <form action="download-software.html" style="max-width:520px;">
+
+  <div style="
+      display:flex;
+      background:#ffffff;
+      border:1px solid #C7D2E2;
+      border-radius:10px;
+      padding:10px;
+      gap:12px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.15);
+  ">
+
+    <input type="text" name="search" required
+        placeholder="Example: “DCP-L2680DW, HL-L2321D"
+        style="
+            flex:1;
+            border:none;
+            outline:none;
+            padding:14px;
+            font-size:16px;
+            background:#F3F6FA;
+            border-radius:8px;
+        ">
+
+    <button type="submit" style="
+        background:#0071CE;
+        color:white;
+        border:none;
+        padding:14px 30px;
+        border-radius:8px;
+        font-size:16px;
+        font-weight:600;
+        cursor:pointer;
+        transition:0.3s ease;
+    "
+    onmouseover="this.style.background='#005CA8'"
+    onmouseout="this.style.background='#0071CE'">
+      Next
+    </button>
+
+  </div>
+
+</form>
           <br>
         </div>
       </div>
