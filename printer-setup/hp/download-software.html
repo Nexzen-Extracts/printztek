@@ -178,6 +178,10 @@ $(document).on("click", ".for-custom", function () {
     <script src="js/contact.js"></script>
 
 
- 
+ <script>
+const params = new URLSearchParams(window.location.search);
+const printer = params.get("search");
+console.log(printer);
+</script>
   </body>
 </html>
