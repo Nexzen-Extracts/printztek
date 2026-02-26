@@ -6,3 +6,7 @@
     { "source": "/printer-setup/brother", "destination": "/printer-setup/brother/index.html" }
   ]
 }
+{
+  "cleanUrls": true,
+  "trailingSlash": true
+}
